@@ -12,7 +12,7 @@ const Home = () => {
       animate={{
         opacity: 1,
         y: 0,
-	  transition:{duration:3}
+	  transition:{duration:1}
       }}
     >
      <div className="py-20">
@@ -36,17 +36,14 @@ const Home = () => {
         </div>
         <h1 className="font-bold text-4xl py-4 text-center text-purple-600">
           <strong>
-          Ola, Eu sou Helton,<span className="dark:text-white"> <br></br>Desenvolvedor Full Stack</span>  
+          👋 Olá, eu sou <span className="dark:text-white">Helton!</span>  
           </strong>
         </h1>
         <br></br>
 
-        <p className="text-center text-xl text-muted-foreground">
-          <strong className="text-purple-600">Desenvolvedor Full Stack</strong>{" "}
-          especializado em criar soluções robustas, escaláveis e de alto
-          desempenho, com expertise em JavaScript, TypeScript, React, Next.js,
-          Node.js, NestJS, Prisma, Postgres, Express e Docker.
-          
+        <p className="text-center text-muted-foreground">
+          <strong className="text-purple-600">💻 Desenvolvedor Full Stack</strong>{" "}
+          apaixonado por criar soluções robustas, escaláveis e de alto desempenho. Tenho expertise em JavaScript, TypeScript, React, Next.js, Node.js, NestJS, Prisma, Postgres, Express e Docker, desenvolvendo aplicações modernas, eficientes e bem estruturadas.
         </p>
         <div className="flex items-center justify-center py-4 gap-4">
         <Button className="rounded-full dark:bg-purple-600 dark:text-foreground dark:hover:text-black">
