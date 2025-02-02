@@ -16,21 +16,21 @@ const About = () => {
           </h1>
 
           <p className="mt-4 text-lg">
-            <strong className="text-white">Desenvolvedor Full Stack</strong>{" "}
+            <strong className="dark:text-white">Desenvolvedor Full Stack</strong>{" "}
             especializado em criar soluções robustas, escaláveis e de alto
             desempenho, com expertise em JavaScript, TypeScript, React, Next.js,
             Node.js, NestJS, Prisma, Postgres, Express e Docker.
           </p>
 
           <p className="py-2 text-lg">
-            <strong className="text-white">Foco em design e usabilidade:</strong>{" "}
+            <strong className="dark:text-white">Foco em design e usabilidade:</strong>{" "}
             Acredito que uma experiência de usuário excepcional é tão essencial
             quanto a qualidade técnica. Busco equilibrar performance,
             acessibilidade e um design intuitivo, garantindo produtos modernos e eficientes.
           </p>
 
           <p className="py-2 text-lg">
-            <strong className="text-white">Aprendizado contínuo:</strong> Estou
+            <strong className="dark:text-white">Aprendizado contínuo:</strong> Estou
             sempre atualizado com as tendências tecnológicas, aplicando as melhores
             práticas para desenvolver soluções inovadoras e competitivas.
           </p>
@@ -54,11 +54,11 @@ const About = () => {
           <CardHeader>
             <CardTitle className="text-white text-xl">Vamos conversar?</CardTitle>
           </CardHeader>
-          <CardContent className="text-lg">
+          <CardContent className="text-lg dark:text-white text-white">
             Se você está em busca de alguém com potencial e vontade de aprender, ficarei feliz em bater um papo com você!
           </CardContent>
           <CardFooter className="">
-            <Button className="dark:bg-purple-600 dark:text-white  gap-2">
+            <Button className="dark:bg-purple-600 dark:text-white bg-white text-black gap-2">
               <MessageCircleIcon />
               <Link href="tel:+258843779669">Fale comigo</Link>
             </Button>
