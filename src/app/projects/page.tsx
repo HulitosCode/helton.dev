@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const projects = [
   { title: "Site de prestação de serviços", imgSrc: "/devnexus.png", link: "https://landing-page-fawn-sigma.vercel.app/" },
-  { title: "Sistema de gestão de finanças pessoal", imgSrc: "/login.png", link: "https://financeai-qzbfj15bg-hulitoscodes-projects.vercel.app/login" },
+  { title: "Sistema de gestão de finanças pessoal", imgSrc: "/finance.png", link: "https://financeai-qzbfj15bg-hulitoscodes-projects.vercel.app/login" },
   { title: "Site de saude", imgSrc: "/saude.png", link: "https://neurovida.vercel.app/" },
   { title: "API de gestão de artigos", imgSrc: "/api.png", link: "https://nestjs-backend-v9c5.onrender.com/api" },
 ];
