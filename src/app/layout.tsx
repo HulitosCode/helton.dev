@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={`${geistMono.variable} ${geistSans.variable}dark, antialiased `}
+        className={`${geistMono.variable} ${geistSans.variable}dark, antialiased,`}
       >
         <ThemeProvider
           attribute="class"
@@ -39,7 +39,7 @@ export default function RootLayout({
           <div className="border-b py-3">
             <Header />
           </div>
-          <div className="container mx-auto max-w-screen-xl">
+          <div className="container mx-auto max-w-screen-xl ">
             <main>{children}</main>
           </div>
         </ThemeProvider>
