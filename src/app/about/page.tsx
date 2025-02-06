@@ -29,7 +29,7 @@ const tecnologias = [
 const About = () => {
   return (
     <>
-      <div className="lg:px-32 md:px-32 mt-6 px-6 text-muted-foreground">
+      <div className="lg:px-32 md:px-32 mt-20 px-6 text-muted-foreground">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           {/* Texto de apresentação */}
           <div>
@@ -38,7 +38,7 @@ const About = () => {
               <span className="dark:text-white">Desenvolvedor Full Stack</span>
             </h1>
 
-            <p className="mt-4 text-lg">
+            <p className="mt-4 text-md">
               <strong className="dark:text-white">
                 Desenvolvedor Full Stack
               </strong>{" "}
@@ -47,7 +47,7 @@ const About = () => {
               Next.js, Node.js, NestJS, Prisma, Postgres, Express e Docker.
             </p>
 
-            <p className="py-2 text-lg">
+            <p className="py-2 text-md">
               <strong className="dark:text-white">
                 Foco em design e usabilidade:
               </strong>{" "}
@@ -57,7 +57,7 @@ const About = () => {
               produtos modernos e eficientes.
             </p>
 
-            <p className="py-2 text-lg">
+            <p className="py-2 text-md">
               <strong className="dark:text-white">Aprendizado contínuo:</strong>{" "}
               Estou sempre atualizado com as tendências tecnológicas, aplicando
               as melhores práticas para desenvolver soluções inovadoras e
@@ -67,17 +67,17 @@ const About = () => {
               <strong className="text-purple-600">💻 Skills</strong>
             </p>
             <div className="flex flex-wrap  gap-3 py-4">
-                        {tecnologias.map((tec, index) => (
-                          <Image 
-                            key={index} 
-                            src={tec.imgSrc} 
-                            alt={tec.nome} 
-                            width={40} 
-                            height={30} 
-                            className="w-4 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain"
-                          />
-                        ))}
-                      </div>
+              {tecnologias.map((tec, index) => (
+                <Image
+                  key={index}
+                  src={tec.imgSrc}
+                  alt={tec.nome}
+                  width={40}
+                  height={30}
+                  className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 object-contain"
+                />
+              ))}
+            </div>
           </div>
 
           {/* Imagem */}
@@ -102,7 +102,7 @@ const About = () => {
             </CardHeader>
             <CardContent className="text-lg dark:text-white text-white">
               Se você está em busca de alguém com potencial e vontade de
-              aprender, ficarei feliz em bater um papo com você!
+              aprender, ficarei feliz em conversar com você!
             </CardContent>
             <CardFooter className="">
               <Link href="tel:+258843779669">

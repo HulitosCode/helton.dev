@@ -35,7 +35,7 @@ const Home = () => {
         <div className="mt-16">
           <svg
             viewBox="0 0 1024 1024"
-            className="absolute top-1/8 left-1/3 -z-10 size-[45rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            className="absolute top-1/2 left-1/2 -z-10 size-[30rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:size-[35rem] md:size-[40rem] lg:size-[45rem] xl:size-[50rem]"
             aria-hidden="true"
           >
             <circle
@@ -80,33 +80,35 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 py-4">
             {tecnologias.map((tec, index) => (
-              <Image 
-                key={index} 
-                src={tec.imgSrc} 
-                alt={tec.nome} 
-                width={40} 
-                height={30} 
+              <Image
+                key={index}
+                src={tec.imgSrc}
+                alt={tec.nome}
+                width={40}
+                height={30}
                 className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain"
               />
             ))}
           </div>
 
           <div className="flex items-center justify-center py-4 gap-4">
-            <Button className="rounded-full dark:bg-purple-600 dark:text-foreground dark:hover:text-black">
-              <Link
-                href="https://www.linkedin.com/in/heltonmatimbe/"
-                target="_blank"
-              >
-                Me acompanhe no Linkedin{" "}
-              </Link>
-              <LinkedinIcon />
-            </Button>
-            <Button className="rounded-full dark:bg-purple-600 dark:text-foreground dark:hover:text-black">
-              <Link href="https://github.com/HulitosCode" target="_blank">
-                Meu Github
-              </Link>
-              <GithubIcon />
-            </Button>
+            <div className="flex flex-col md:flex-row sm:flex-col gap-2">
+              <Button className="rounded-full dark:bg-purple-600 dark:text-foreground dark:hover:text-black">
+                <Link
+                  href="https://www.linkedin.com/in/heltonmatimbe/"
+                  target="_blank"
+                >
+                  Me acompanhe no Linkedin{" "}
+                </Link>
+                <LinkedinIcon />
+              </Button>
+              <Button className="rounded-full dark:bg-purple-600 dark:text-foreground dark:hover:text-black">
+                <Link href="https://github.com/HulitosCode" target="_blank">
+                  Meu Github
+                </Link>
+                <GithubIcon />
+              </Button>
+            </div>
           </div>
           <div className=" mt-6 flex items-center justify-center">
             <Image

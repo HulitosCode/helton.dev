@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Sistema de gestão de finanças pessoal",
     descricao:
-      "Sistema de finanças pessoais com TypeScript, ShadCN, Clerk, Prisma, Tailwind e PostgreSQL. Interface intuitiva para controle financeiro.",
+      "O sistema de finanças pessoais utiliza TypeScript, ShadCN, Clerk, Prisma, Tailwind e PostgreSQL. Ele oferece uma interface intuitiva para o controle financeiro, permitindo gerenciar finanças de forma fácil e eficiente.",
     imgSrc: "/finance.png",
     link: "https://financeai-qzbfj15bg-hulitoscodes-projects.vercel.app/login",
   },
@@ -39,6 +39,13 @@ const projects = [
       "API para gestão de artigos com NestJS, Prisma, PostgreSQL e Docker. Solução escalável e eficiente.",
     imgSrc: "/api.png",
     link: "https://nestjs-backend-v9c5.onrender.com/api",
+  },
+  {
+    title: "site de Importação e Exportação",
+    descricao:
+      "Site de Importação e Exportação desenvolvido com HTML, CSS e JavaScript. Possui design moderno, responsivo e navegação intuitiva.",
+    imgSrc: "/sig.png",
+    link: "https://hulitoscode.github.io/sig/",
   },
   {
     title: "Lista de Tarefas",
@@ -73,6 +80,26 @@ const tecnologias = [
 const Projects = () => {
   return (
     <div className="py-20 px-6 lg:px-32 md:px-16 dark:text-muted-foreground">
+      <svg
+        viewBox="0 0 1024 1024"
+        className="absolute top-1/2 left-1/2 -z-10 size-[30rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:size-[35rem] md:size-[40rem] lg:size-[45rem] xl:size-[50rem]"
+        aria-hidden="true"
+      >
+        <circle
+          cx="512"
+          cy="512"
+          r="512"
+          fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+          fillOpacity="0.4"
+        />
+        <defs>
+          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+            <stop stopColor="#7775D6" />
+            <stop offset="1" stopColor="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+
       <div className="text-center">
         <h1 className="text-3xl font-bold text-purple-600 py-6">
           Meus Projetos 🚀
@@ -83,14 +110,15 @@ const Projects = () => {
           soluções eficientes e escaláveis, utilizando tecnologias modernas como
           React, Next.js, Node.js, NestJS, Prisma, PostgreSQL e Docker.
         </p>
-        <div className="flex items-center justify-center gap-2 py-4">
+        <div className="flex flex-wrap items-center justify-center gap-3 py-5">
           {tecnologias.map((tec, index) => (
             <Image
               key={index}
               src={tec.imgSrc}
               alt={tec.nome}
-              width={30}
-              height={20}
+              width={40}
+              height={30}
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain"
             />
           ))}
         </div>
@@ -137,7 +165,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Card key={index} className="w-full max-w-sm shadow-lg">
             <CardHeader>
-              <CardTitle className="text-center font-bold text-xl">
+              <CardTitle className="text-center text-foreground text-md">
                 {project.title}
               </CardTitle>
             </CardHeader>
